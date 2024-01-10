@@ -1,0 +1,39 @@
+.earth {
+  width: 420px;
+  height: 420px;
+  background-image: url(https://raw.githubusercontent.com/cartalan/TierraGirando/master/img/mapa.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -82px;
+  bottom: 0;
+  z-index: 100;
+
+  margin: auto;
+  background-color: #47b6c4;
+  box-shadow: -30px -20px 0 0 rgba(0, 0, 0, 0.15) inset,
+    -70px -30px 0 0 rgba(0, 0, 0, 0.1) inset,
+    5px 5px 0 0 rgba(255, 255, 255, 0.2) inset;
+  -webkit-animation: rotationEarth 10s infinite linear;
+  -moz-animation: rotationEarth 10s infinite linear;
+  animation: rotationEarth 10s infinite linear;
+}
+
+@-webkit-keyframes rotationEarth {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: -822px center;
+  }
+}
+
+@keyframes rotationEarth {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: -830px center;
+  }
+}

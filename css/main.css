@@ -1,0 +1,277 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+  padding: 0 72px;
+}
+@media (min-width: 767px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1023px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1279px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.btn {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #df6437;
+  color: #fff;
+  fill: #fff;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header {
+  background-color: #fff;
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hero__title {
+  color: #df6437;
+  z-index: 101;
+  text-align: center;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 71px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  text-shadow: 4px 3px 0px #000;
+}
+
+.hero__text-wrap {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.hero__text-wrap::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.hero__text {
+  color: #191a19;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  width: 540px;
+}
+
+.earth {
+  width: 420px;
+  height: 420px;
+  background-image: url(https://raw.githubusercontent.com/cartalan/TierraGirando/master/img/mapa.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -82px;
+  bottom: 0;
+  z-index: 100;
+  margin: auto;
+  background-color: #47b6c4;
+  box-shadow: -30px -20px 0 0 rgba(0, 0, 0, 0.15) inset, -70px -30px 0 0 rgba(0, 0, 0, 0.1) inset, 5px 5px 0 0 rgba(255, 255, 255, 0.2) inset;
+  animation: rotationEarth 10s infinite linear;
+}
+@keyframes rotationEarth {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: -830px center;
+  }
+}
+.video__frame {
+  width: 100%;
+  height: 534px;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  width: 100%;
+}
+
+.about__item {
+  width: calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.about__item--single {
+  width: calc(50% - 12px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__item-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.about__item-text {
+  color: #191a19;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.video--page-1 {
+  padding-top: 16px;
+  padding-bottom: 48px;
+}
+
+.page-nav--page-1 {
+  padding-bottom: 258px;
+}
+
+.page-nav__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
