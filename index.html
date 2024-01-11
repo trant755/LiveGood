@@ -12,6 +12,22 @@
     <title>LiveGood Universe</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-FEG6QHPZ4C"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-FEG6QHPZ4C");
+  </script>
+
   <body>
     <header class="header">
       <div class="container header__container">
@@ -57,7 +73,7 @@
             />
           </svg>
         </div>
-        <a class="btn"
+        <a id="register-link-1" class="btn"
           ><span>Зареєструватись</span
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -310,7 +326,11 @@
     <section class="page-nav page-nav--page-1">
       <div class="container page-nav__container">
         <div class="page-nav__btn-wrap">
-          <button class="btn page-nav__btn" type="button">
+          <button
+            id="button-more-step-1"
+            class="btn page-nav__btn"
+            type="button"
+          >
             <span>Більше про бізнес</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
