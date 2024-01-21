@@ -1,7 +1,7 @@
 .about {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-image: url("/img/bg-logo-single.png");
+  background-image: url("../img/bg-logo-single.png");
 
   background-size: 150%;
   background-position: center;
@@ -107,7 +107,7 @@
 .poster-page-1 {
   height: 448px;
 
-  background-image: url("/img/bg-page-1-mountain.jpg");
+  background-image: url("../img/bg-page-1-mountain.jpg");
 
   background-size: auto calc(100% - 32px);
   background-position: top center;
@@ -131,7 +131,7 @@
   padding-left: 45px;
   padding-right: 50px;
 
-  background-image: url("/img/buds-1.png");
+  background-image: url("../img/buds-1.png");
 
   background-size: 338px 171px;
   background-position: bottom left 20%;
@@ -143,7 +143,8 @@
     padding-right: 60px;
     padding-top: 71px;
 
-    background-image: url("/img/buds-1.png"), url("/img/bg-page-1-mountain.jpg");
+    background-image: url("../img/buds-1.png"),
+      url("../img/bg-page-1-mountain.jpg");
 
     background-size: 378px 193px, auto calc(100% - 49px);
     background-position: bottom left 10%, top center;
