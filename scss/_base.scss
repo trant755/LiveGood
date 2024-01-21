@@ -1,3 +1,7 @@
+.body {
+  color: #191a19;
+}
+
 .visualy-hidden {
   position: absolute;
   width: 1px;
@@ -13,6 +17,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 
   border: none;
 
@@ -27,4 +32,32 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.text-orange {
+  color: #df6437;
+  font-weight: 800;
+  font-size: 16px;
+
+  @media (min-width: 767px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1023px) {
+    font-size: 24px;
+  }
+}
+
+.text-green {
+  color: #3ba637;
+  font-weight: 800;
+  font-size: 16px;
+
+  @media (min-width: 767px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1023px) {
+    font-size: 24px;
+  }
 }

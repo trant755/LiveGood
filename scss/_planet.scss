@@ -1,35 +1,96 @@
 .earth {
-  width: 420px;
-  height: 420px;
+  width: 200px;
+  height: 200px;
   background-image: url(https://raw.githubusercontent.com/cartalan/TierraGirando/master/img/mapa.png);
   background-size: cover;
   border-radius: 50%;
   position: absolute;
   top: 0;
-  right: -82px;
+  right: 0;
   bottom: 0;
   z-index: 100;
+  left: 0;
 
   margin: auto;
   background-color: #47b6c4;
   box-shadow: -30px -20px 0 0 rgba(0, 0, 0, 0.15) inset,
     -70px -30px 0 0 rgba(0, 0, 0, 0.1) inset,
     5px 5px 0 0 rgba(255, 255, 255, 0.2) inset;
-  -webkit-animation: rotationEarth 10s infinite linear;
-  -moz-animation: rotationEarth 10s infinite linear;
-  animation: rotationEarth 10s infinite linear;
+  -webkit-animation: rotationEarthMob 10s infinite linear;
+  -moz-animation: rotationEarthMob 10s infinite linear;
+  animation: rotationEarthMob 10s infinite linear;
+
+  @media (min-width: 767px) {
+    width: 310px;
+    height: 310px;
+    right: 0;
+
+    -webkit-animation: rotationEarthTab 10s infinite linear;
+    -moz-animation: rotationEarthTab 10s infinite linear;
+    animation: rotationEarthTab 10s infinite linear;
+  }
+
+  @media (min-width: 1023px) {
+    width: 420px;
+    height: 420px;
+    right: -82px;
+    left: auto;
+    -webkit-animation: rotationEarthDesk 10s infinite linear;
+    -moz-animation: rotationEarthDesk 10s infinite linear;
+    animation: rotationEarthDesk 10s infinite linear;
+  }
+
+  @media (min-width: 1279px) {
+    right: 55px;
+  }
 }
 
-@-webkit-keyframes rotationEarth {
+@-webkit-keyframes rotationEarthMob {
   from {
     background-position: left center;
   }
   to {
-    background-position: -822px center;
+    background-position: -396px center;
   }
 }
 
-@keyframes rotationEarth {
+@keyframes rotationEarthMob {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: -396px center;
+  }
+}
+
+@-webkit-keyframes rotationEarthTab {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: -615px center;
+  }
+}
+
+@keyframes rotationEarthTab {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: -615px center;
+  }
+}
+
+@-webkit-keyframes rotationEarthDesk {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: -830px center;
+  }
+}
+
+@keyframes rotationEarthDesk {
   from {
     background-position: left center;
   }

@@ -1,4 +1,21 @@
 .about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("/img/bg-logo-single.png");
+
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 767px) {
+    background-size: 80%;
+    padding-top: 56px;
+  }
+
+  @media (min-width: 1023px) {
+    background-size: 50%;
+    padding-bottom: 140px;
+  }
 }
 
 .about__container {
@@ -6,16 +23,21 @@
 
 .about__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
   justify-content: center;
   align-items: stretch;
   gap: 24px;
   width: 100%;
+
+  @media (min-width: 767px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 48px 24px;
+  }
 }
 // 2 items in a row
 .about__item {
-  width: calc(50% - 12px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,22 +46,40 @@
   gap: 32px;
 
   margin-bottom: 56px;
+
+  @media (min-width: 767px) {
+    width: calc(50% - 12px);
+    margin-bottom: 0;
+  }
 }
 
 .about__item--single {
-  width: calc(50% - 12px);
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 56px;
+
+  @media (min-width: 767px) {
+    width: calc(50% - 12px);
+  }
 }
 
 .about__item-position {
+  @media (min-width: 767px) {
+  }
+
+  @media (min-width: 1023px) {
+    width: 81px;
+    height: 81px;
+  }
 }
 
 .about__item-text-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex: 1;
 
   text-align: center;
   gap: 16px;
@@ -61,5 +101,115 @@
 }
 
 .page-nav--page-1 {
-  padding-bottom: 258px;
+  padding-bottom: 128px;
+}
+
+.poster-page-1 {
+  height: 448px;
+
+  background-image: url("/img/bg-page-1-mountain.jpg");
+
+  background-size: auto calc(100% - 32px);
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 767px) {
+    background-image: none;
+    height: 427px;
+  }
+
+  @media (min-width: 1023px) {
+    height: 646px;
+  }
+}
+
+.poster-page-1__container {
+  height: 100%;
+  padding-bottom: 30px;
+
+  padding-top: 82px;
+  padding-left: 45px;
+  padding-right: 50px;
+
+  background-image: url("/img/buds-1.png");
+
+  background-size: 338px 171px;
+  background-position: bottom left 20%;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 767px) {
+    padding-bottom: 49px;
+    padding-left: 192px;
+    padding-right: 60px;
+    padding-top: 71px;
+
+    background-image: url("/img/buds-1.png"), url("/img/bg-page-1-mountain.jpg");
+
+    background-size: 378px 193px, auto calc(100% - 49px);
+    background-position: bottom left 10%, top center;
+  }
+
+  @media screen and (min-width: 1023px) {
+    padding-bottom: 103px;
+    padding-left: 247px;
+    padding-right: 70px;
+    padding-top: 121px;
+
+    background-size: 591px 302px, auto calc(100% - 103px);
+    background-position: bottom left 15%, top center;
+  }
+
+  @media screen and (min-width: 1279px) {
+    padding-bottom: 103px;
+    padding-left: 400px;
+    padding-right: 100px;
+    padding-top: 121px;
+  }
+}
+
+.poster-page-1__text {
+  text-align: right;
+  color: #191a19;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+
+  @media (min-width: 767px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1023px) {
+    font-size: 24px;
+  }
+}
+
+.poster-page-1__text--span {
+  font-size: 20px;
+
+  @media (min-width: 767px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 1023px) {
+    font-size: 32px;
+  }
+}
+
+.poster-page-1__text--span--second {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+
+  @media (min-width: 767px) {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+
+  @media (min-width: 1023px) {
+    margin-top: 12px;
+    font-size: 28px;
+  }
 }
