@@ -6,3 +6,18 @@
   gap: 32px;
   width: 100%;
 }
+
+.page-nav__btn-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.page-nav__btn--back {
+  background-color: transparent;
+  color: #bebebe;
+  font-size: 14px;
+}
