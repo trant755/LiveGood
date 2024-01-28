@@ -2,8 +2,34 @@
 <html lang="en">
   <head>
     <!-- Google Tag Manager -->
-
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WZHK9HKF");
+    </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) - Google Ads-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11451797143"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11451797143");
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,11 +56,31 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) - Google Analytics-->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-32EKE3CBKR"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-32EKE3CBKR");
+  </script>
 
   <body>
     <!-- Google Tag Manager (noscript) -->
-
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WZHK9HKF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="header">
@@ -82,7 +128,10 @@
             />
           </svg>
         </a>
-        <a id="register-link-1" class="btn" href="instruction.html#register"
+        <a
+          id="indexHeader-registerLink"
+          class="btn"
+          href="instruction.html#register"
           ><span>Зареєструватись</span
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +238,11 @@
                     Приєднуйтесь до нашої спільноти та змінюйте своє життя з
                     LiveGood!
                   </p>
-                  <a class="btn" href="https://shoplivegood.com/LGLAY">
+                  <a
+                    id="indexBody-magazLink"
+                    class="btn"
+                    href="https://shoplivegood.com/LGLAY"
+                  >
                     <span>До магазину</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +301,11 @@
                     Змінюйте своє життя з LiveGood - де поєднання можливостей
                     перетворює мрії в досягнення!
                   </p>
-                  <a class="btn" href="instruction.html#register">
+                  <a
+                    id="indexBody-registerLink"
+                    class="btn"
+                    href="instruction.html#register"
+                  >
                     <span>Зареєструватись</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -346,6 +403,7 @@
         <section class="video video--page-1">
           <div class="container">
             <iframe
+              id="indexBody-video"
               class="video__frame"
               src="https://www.youtube.com/embed/9WOPETw0Gp8?si=0KshqX6jyYhWv1kJ?modestbranding=1&showinfo=0"
               frameborder="0"
@@ -395,7 +453,12 @@
         <section class="page-nav page-nav--page-1">
           <div class="container page-nav__container">
             <div class="page-nav__btn-wrap">
-              <a class="btn page-nav__btn" data-hash="step-2" href="about.html">
+              <a
+                id="indexBody-readmoreLink"
+                class="btn page-nav__btn"
+                data-hash="step-2"
+                href="about.html"
+              >
                 <span>Більше про бізнес</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
